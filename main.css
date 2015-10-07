@@ -1,0 +1,42 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.logos-image img {
+    max-width: 100%;
+    height: auto;
+}
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.key {
+    display: inline;
+}
+
+ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.input-color {
+    position: relative;
+}
+.input-color input {
+    padding-left: 20px;
+    border: 0px;
+}
+.input-color .color-box {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #ccc;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
