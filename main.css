@@ -17,11 +17,15 @@ p {
     display: inline;
 }
 
-ul {
-    display: inline;
+.progress li {
+    display: inline-block;
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.progress div {
+    display: inline-block;
 }
 
 .input-color {
@@ -29,15 +33,34 @@ ul {
 }
 .input-color input {
     padding-left: 40px;
-    height: 40px;
+    max-width: 100px;
+    height: 30px;
     border: 0px;
 }
 .input-color .color-box {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
     background-color: #ccc;
     position: absolute;
     left: 5px;
     top: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table {
+    counter-reset: rowNumber;
+}
+
+table tr:not(:first-child) {
+    counter-increment: rowNumber;
+}
+
+table tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
 }
